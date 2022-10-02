@@ -1,0 +1,18 @@
+/*****************
+/* Autor: Carlos Diez Fernández UO284373
+/* Descripción: 
+/***********/
+/**
+table{
+    text-align: center;
+}
+td{
+    border:2px solid black;
+}
+th{
+    border:2px solid black;
+}
+thead{
+    background-color:rgb(17, 212, 92);
+}
+**/
