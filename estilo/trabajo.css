@@ -1,0 +1,51 @@
+/*****************
+/* Autor: Carlos Diez Fernández UO284373
+/* Descripción: 
+/***********/
+/**
+**/
+
+header{
+    /*background-color: darkorange;*/
+    display: flex;
+    padding: 0.3em;
+    align-items: center;
+}
+
+header > section > h1{
+    margin-left: 0.3em;
+    margin-top: 0em;
+}
+
+header > section > img{
+    margin-left: 0.5em;
+}
+
+nav{
+    /*background-color: dimgrey;*/
+    margin-left: 10em;
+}
+
+nav > a{
+    padding: 1.5em;
+    margin-inline: 1em;
+}
+
+fieldset{
+    margin-bottom: 1em;
+}
+table > caption{
+    padding: 0.3em;
+}
+ 
+main{
+    /*background-color: blue;*/
+}
+footer{
+    /*background-color: darkgreen;*/
+}
+
+
+
+
+
