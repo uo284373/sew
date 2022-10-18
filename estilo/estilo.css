@@ -31,6 +31,7 @@ nav{  /*Especificidad:001*/
 
 nav > a{  /*Especificidad:002*/
     margin-inline: 1em;
+    margin-bottom: 0.5em;
     text-decoration: none;
     color: white;
     font-size: 1.3em;
