@@ -1,0 +1,40 @@
+/*****************
+/* Autor: Carlos Diez Fernández UO284373
+/* Descripción: 
+/***********/
+/**
+**/
+header{
+    grid-area: header;
+}
+main{
+    grid-area: main;
+}
+aside{
+    grid-area: aside;
+    margin-top: 3em;
+    margin-right: 3em;
+}
+footer{
+    grid-area: footer;
+}
+body{
+    display:grid;
+    grid-template-areas: 'header header header'
+    'main main aside'
+    'footer footer footer' ;
+    grid-gap: 2em;
+    grid-column-gap: 5em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
