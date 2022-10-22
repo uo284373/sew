@@ -9,7 +9,7 @@ body{  /*Especificidad:001*/
     text-align: justify;
     color: black;
     background-color: white;
-    font-size: 1.3em;
+    font-size: 1.5em;
 }
 header{  /*Especificidad:001*/
     background-color: darkblue;
