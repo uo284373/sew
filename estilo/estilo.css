@@ -45,6 +45,10 @@ nav > a:hover{  /*Especificidad:012*/
     background-color: coral;
 }
 
+main{
+    background-color: white;
+}
+
 h2{  /*Especificidad:001*/
     font-family: Impact,serif;
     font-size: 2em;
