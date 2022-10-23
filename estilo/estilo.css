@@ -54,6 +54,11 @@ footer{  /*Especificidad:001*/
     color: black;
 }
 
+video{
+    width: 50%;
+    height: 70%;
+}
+
 nav > a{  /*Especificidad:002*/
     margin-inline: 1em;
     line-height: 2em;
