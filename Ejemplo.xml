@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE person SYSTEM "person.dtd">
+<person name="María">
+	<datos>
+		<surname>Fernández Fernández</surname>
+		<birthDate>2001-10-27</birthDate>
+		<birthPlace>Oviedo</birthPlace>
+		<coordinatesBirthPlace>
+			<latitude>-5.854596</latitude>
+			<length>43.351906</length>
+			<altitude>20</altitude>
+		</coordinatesBirthPlace>
+		<residencePlace>Oviedo</residencePlace>
+		<coordinateResidencePlace>
+			<latitudeR>-5.858276</latitudeR>
+			<lengthR>43.353123</lengthR>
+			<altitudeR>20</altitudeR>
+		</coordinateResidencePlace>
+		<pictures>
+			<picture archivo="https://cdn.pixabay.com/photo/2016/11/29/13/14/attractive-1869761_960_720.jpg">Foto María</picture>
+		</pictures>
+		<videos>
+			<video link="https://www.youtube.com/watch?v=VRchrCuDLVo">Video María</video>
+		</videos>
+		<comments>
+			<comment>Quiere estudiar biología</comment>
+			<comment>Sus deportes preferidos son natación y baloncesto</comment>
+		</comments>
+	</datos>
+	
+	<person name="Laura">
+		<datos>
+			<surname>Fernández García</surname>
+			<birthDate>2005-10-14</birthDate>
+			<birthPlace>Leon</birthPlace>
+			<coordinatesBirthPlace>
+				<latitude>-5.568425</latitude>
+				<length>42.603223</length>
+				<altitude>20</altitude>
+			</coordinatesBirthPlace>
+			<residencePlace>Oviedo</residencePlace>
+			<coordinateResidencePlace>
+				<latitudeR>-5.8562697</latitudeR>
+				<lengthR>43.3554438</lengthR>
+				<altitudeR>20</altitudeR>
+			</coordinateResidencePlace>
+			<pictures>
+				<picture archivo="https://cdn.pixabay.com/photo/2017/02/16/23/10/smile-2072907_960_720.jpg">Foto Laura</picture>
+			</pictures>
+			<videos>
+				
+			</videos>
+			<comments>
+				<comment>Quiere estudiar biología</comment>
+				<comment>Sus deportes preferidos son natación y baloncesto</comment>
+			</comments>
+		</datos>
+		<person name="Paula">
+			<datos>
+				<surname>Díaz García</surname>
+				<birthDate>2007-05-17</birthDate>
+				<birthPlace>París</birthPlace>
+				<coordinatesBirthPlace>
+					<latitude>2.338349</latitude>
+					<length>48.842605</length>
+					<altitude>20</altitude>
+				</coordinatesBirthPlace>
+				<residencePlace>Madrid</residencePlace>
+				<coordinateResidencePlace>
+					<latitudeR>-3.715177</latitudeR>
+					<lengthR>40.425756</lengthR>
+					<altitudeR>20</altitudeR>
+				</coordinateResidencePlace>
+				<pictures>
+					<picture archivo="https://cdn.pixabay.com/photo/2015/11/26/00/14/woman-1063100_960_720.jpg">Foto Paula</picture>
+				</pictures>
+				<videos>
+					<video link="https://www.youtube.com/watch?v=fXBXOaLcMZg">Video Paula</video>
+				</videos>
+				<comments>
+					<comment>Quiere estudiar enfermería</comment>
+					<comment>Sus deportes preferidos son natación y baloncesto</comment>
+				</comments>
+			</datos>
+		</person>
+		<person name="Pablo">
+			<datos>
+				<surname>Gabarre García</surname>
+				<birthDate>2001-12-15</birthDate>
+				<birthPlace>Sevilla</birthPlace>
+				<coordinatesBirthPlace>
+					<latitude>-5.986188</latitude>
+					<length>37.385540</length>
+					<altitude>20</altitude>
+				</coordinatesBirthPlace>
+				<residencePlace>Málaga</residencePlace>
+				<coordinateResidencePlace>
+					<latitudeR>-4.421618</latitudeR>
+					<lengthR>36.726474</lengthR>
+					<altitudeR>20</altitudeR>
+				</coordinateResidencePlace>
+				<pictures>
+					<picture archivo="https://cdn.pixabay.com/photo/2016/11/21/12/42/beard-1845166_960_720.jpg">Foto Pablo</picture>
+				</pictures>
+				<videos>
+					
+				</videos>
+				<comments>
+					<comment>Quiere estudiar ingeniería industrial</comment>
+					<comment>Sus deportes preferidos son natación y baloncesto</comment>
+				</comments>
+			</datos>
+		</person>
+		<person name="Jaime">
+			<datos>
+				<surname>Varela García</surname>
+				<birthDate>1997-05-12</birthDate>
+				<birthPlace>Barcelona</birthPlace>
+				<coordinatesBirthPlace>
+					<latitude>2.128340</latitude>
+					<length>41.386035</length>
+					<altitude>20</altitude>
+				</coordinatesBirthPlace>
+				<residencePlace>Murcia</residencePlace>
+				<coordinateResidencePlace>
+					<latitudeR>-1.140392</latitudeR>
+					<lengthR>37.990595</lengthR>
+					<altitudeR>20</altitudeR>
+				</coordinateResidencePlace>
+				<pictures>
+					<picture archivo="https://cdn.pixabay.com/photo/2015/01/08/18/29/entrepreneur-593358_960_720.jpg">Foto Jaime</picture>
+				</pictures>
+				<videos>
+					<video link="https://www.youtube.com/watch?v=-KnoYF1wNG0">Video Jaime</video>
+				</videos>
+				<comments>
+					<comment>Quiere estudiar mecánica</comment>
+					<comment>Sus deportes preferidos son natación y baloncesto</comment>
+				</comments>
+			</datos>
+		</person>
+	</person>
+	
+	<person name="Alberto">
+		<datos>
+			<surname>Álvarez Fernández</surname>
+			<birthDate>1995-10-04</birthDate>
+			<birthPlace>Tarragona</birthPlace>
+			<coordinatesBirthPlace>
+				<latitude>1.241285</latitude>
+				<length>41.119015</length>
+				<altitude>10</altitude>
+			</coordinatesBirthPlace>
+			<residencePlace>Valencia</residencePlace>
+			<coordinateResidencePlace>
+				<latitudeR>-0.385041</latitudeR>
+				<lengthR>39.468211</lengthR>
+				<altitudeR>10</altitudeR>
+			</coordinateResidencePlace>
+			<pictures>
+				<picture archivo="https://cdn.pixabay.com/photo/2017/04/01/21/06/portrait-2194457_960_720.jpg">Foto de Alberto</picture>
+			</pictures>
+			<videos>
+				
+			</videos>
+			<comments>
+				<comment>Quiere estudiar medicina</comment>
+				<comment>Sus deportes preferidos son fútbol y ciclismo</comment>
+			</comments>
+		</datos>
+		<person name="Claudia">
+			<datos>
+				<surname>González García</surname>
+				<birthDate>2004-06-09</birthDate>
+				<birthPlace>Badajoz</birthPlace>
+				<coordinatesBirthPlace>
+					<latitude>-6.970087</latitude>
+					<length>38.881072</length>
+					<altitude>20</altitude>
+				</coordinatesBirthPlace>
+				<residencePlace>Teruel</residencePlace>
+				<coordinateResidencePlace>
+					<latitudeR>-1.107685</latitudeR>
+					<lengthR>40.345333</lengthR>
+					<altitudeR>20</altitudeR>
+				</coordinateResidencePlace>
+				<pictures>
+					<picture archivo="https://cdn.pixabay.com/photo/2018/01/02/09/47/woman-3055841_960_720.jpg">Foto de Claudia</picture>
+				</pictures>
+				<videos>
+					<video link="https://www.youtube.com/watch?v=AeIlL0sCFnY">Video Claudia</video>
+				</videos>
+				<comments>
+					<comment>Quiere estudiar jardinería</comment>
+					<comment>Sus deportes preferidos son natación y baloncesto</comment>
+				</comments>
+			</datos>
+		</person>
+		<person name="Enol">
+			<datos>
+				<surname>López García</surname>
+				<birthDate>2002-03-12</birthDate>
+				<birthPlace>Santander</birthPlace>
+				<coordinatesBirthPlace>
+					<latitude>-3.821307</latitude>
+					<length>43.457348</length>
+					<altitude>20</altitude>
+				</coordinatesBirthPlace>
+				<residencePlace>Almería</residencePlace>
+				<coordinateResidencePlace>
+					<latitudeR>-2.463801</latitudeR>
+					<lengthR>36.836623</lengthR>
+					<altitudeR>20</altitudeR>
+				</coordinateResidencePlace>
+				<pictures>
+					<picture archivo="https://cdn.pixabay.com/photo/2015/01/12/10/45/man-597178_960_720.jpg">Foto de Enol</picture>
+				</pictures>
+				<videos>
+					
+				</videos>
+				<comments>
+					<comment>Quiere estudiar magisterio</comment>
+					<comment>Sus deportes preferidos son natación y baloncesto</comment>
+				</comments>
+			</datos>
+		</person>
+		<person name="Ramón">
+			<datos>
+				<surname>Hernández García</surname>
+				<birthDate>2007-04-03</birthDate>
+				<birthPlace>Bilbao</birthPlace>
+				<coordinatesBirthPlace>
+					<latitude>-2.933660</latitude>
+					<length>43.260701</length>
+					<altitude>20</altitude>
+				</coordinatesBirthPlace>
+				<residencePlace>Palencia</residencePlace>
+				<coordinateResidencePlace>
+					<latitudeR>-4.531362</latitudeR>
+					<lengthR>42.009208</lengthR>
+					<altitudeR>20</altitudeR>
+				</coordinateResidencePlace>
+				<pictures>
+					<picture archivo="https://cdn.pixabay.com/photo/2015/07/20/12/57/ambassador-852766_960_720.jpg">Foto de Ramón</picture>
+				</pictures>
+				<videos>
+					<video link="https://www.youtube.com/watch?v=q5roBox09TA">Video Ramon</video>
+				</videos>
+				<comments>
+					<comment>Quiere estudiar psicología</comment>
+					<comment>Sus deportes preferidos son natación y baloncesto</comment>
+				</comments>
+			</datos>
+		</person>
+	</person>
+	
+	<person name="Juan">
+		<datos>
+			<surname>García Martínez</surname>
+			<birthDate>2002-09-04</birthDate>
+			<birthPlace>Ponferrada</birthPlace>
+			<coordinatesBirthPlace>
+				<latitude>-6.600953</latitude>
+				<length>42.552066</length>
+				<altitude>15</altitude>
+			</coordinatesBirthPlace>
+			<residencePlace>Lugo</residencePlace>
+			<coordinateResidencePlace>
+				<latitudeR>-7.561213</latitudeR>
+				<lengthR>43.010310</lengthR>
+				<altitudeR>20</altitudeR>
+			</coordinateResidencePlace>
+			<pictures>
+				<picture archivo="https://cdn.pixabay.com/photo/2015/01/08/18/30/entrepreneur-593371_960_720.jpg">Foto de Juan</picture>
+			</pictures>
+			<videos>
+				
+			</videos>
+			<comments>
+				<comment>Quiere estudiar ingeniería aeroespacial</comment>
+				<comment>Sus deportes preferidos son tenis y balonmano</comment>
+			</comments>
+		</datos>
+		<person name="Mateo">
+			<datos>
+				<surname>Valle García</surname>
+				<birthDate>2000-01-14</birthDate>
+				<birthPlace>A Coruña</birthPlace>
+				<coordinatesBirthPlace>
+					<latitude>-8.408892</latitude>
+					<length>43.359798</length>
+					<altitude>20</altitude>
+				</coordinatesBirthPlace>
+				<residencePlace>Ourense</residencePlace>
+				<coordinateResidencePlace>
+					<latitudeR>-7.871055</latitudeR>
+					<lengthR>42.336582</lengthR>
+					<altitudeR>20</altitudeR>
+				</coordinateResidencePlace>
+				<pictures>
+					<picture archivo="https://cdn.pixabay.com/photo/2016/11/18/19/07/happy-1836445_960_720.jpg">Foto de Mateo</picture>
+				</pictures>
+				<videos>
+					<video link="https://www.youtube.com/watch?v=r09zrSXIfJQ">Video Mateo</video>
+				</videos>
+				<comments>
+					<comment>Quiere estudiar informática</comment>
+					<comment>Sus deportes preferidos son natación y baloncesto</comment>
+				</comments>
+			</datos>
+		</person>
+		<person name="Lucas">
+			<datos>
+				<surname>Moro García</surname>
+				<birthDate>2007-10-22</birthDate>
+				<birthPlace>Burgos</birthPlace>
+				<coordinatesBirthPlace>
+					<latitude>-3.682963</latitude>
+					<length>42.348859</length>
+					<altitude>20</altitude>
+				</coordinatesBirthPlace>
+				<residencePlace>Zaragoza</residencePlace>
+				<coordinateResidencePlace>
+					<latitudeR>-0.893520</latitudeR>
+					<lengthR>41.652403</lengthR>
+					<altitudeR>20</altitudeR>
+				</coordinateResidencePlace>
+				<pictures>
+					<picture archivo="https://cdn.pixabay.com/photo/2018/02/16/14/38/portrait-3157821_960_720.jpg">Foto de Lucas</picture>
+				</pictures>
+				<videos>
+					
+				</videos>
+				<comments>
+					<comment>Quiere estudiar ingeniería eléctrica</comment>
+					<comment>Sus deportes preferidos son natación y baloncesto</comment>
+				</comments>
+			</datos>
+		</person>
+		<person name="Daniel">
+			<datos>
+				<surname>Gabarre García</surname>
+				<birthDate>2009-02-24</birthDate>
+				<birthPlace>Huesca</birthPlace>
+				<coordinatesBirthPlace>
+					<latitude>-0.409620</latitude>
+					<length>42.135640</length>
+					<altitude>20</altitude>
+				</coordinatesBirthPlace>
+				<residencePlace>Gerona</residencePlace>
+				<coordinateResidencePlace>
+					<latitudeR>2.820334</latitudeR>
+					<lengthR>41.97833941</lengthR>
+					<altitudeR>20</altitudeR>
+				</coordinateResidencePlace>
+				<pictures>
+					<picture archivo="https://cdn.pixabay.com/photo/2017/09/25/13/12/man-2785071_960_720.jpg">Foto de Daniel</picture>
+				</pictures>
+				<videos>
+					<video link="https://www.youtube.com/watch?v=n_ceoSJFiQQ">Video Daniel</video>
+				</videos>
+				<comments>
+					<comment>Quiere estudiar derecho</comment>
+					<comment>Sus deportes preferidos son natación y baloncesto</comment>
+				</comments>
+			</datos>
+		</person>
+	</person>
+	
+</person>
