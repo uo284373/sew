@@ -4,7 +4,7 @@ class Meteo{
         this.ciudad = "Oviedo";
         this.unidades = "&units=metric";
         this.idioma = "&lang=es";
-        this.url = "http://api.openweathermap.org/data/2.5/weather?q=" + this.ciudad + this.unidades + this.idioma + "&APPID=" + this.apikey;
+        this.url = "https://api.openweathermap.org/data/2.5/weather?q=" + this.ciudad + this.unidades + this.idioma + "&APPID=" + this.apikey;
     }
 
     cargarDatos(id){
