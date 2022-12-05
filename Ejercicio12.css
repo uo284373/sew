@@ -14,7 +14,7 @@ header{  /*Especificidad:001*/
     margin-bottom: 1em;
 }
 
-p,input{  /*Especificidad:001*/
+p,input,label{  /*Especificidad:001*/
     font-size: 2em;
     font-family: Arial, Helvetica, sans-serif;
 }
