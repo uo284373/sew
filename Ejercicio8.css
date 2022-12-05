@@ -18,7 +18,7 @@ header{  /*Especificidad:001*/
 }
 
 h2{  /*Especificidad:001*/
-    color: chocolate;
+    color: black;
     font-size: 2.3em;
     font-weight: bold;
 }
