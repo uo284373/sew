@@ -1,0 +1,53 @@
+/*****************
+/* Autor: Carlos Diez Fernández UO284373
+/* Descripción: este documento contiene el css de la tarea 6 del ejercicio 11
+/***********/
+
+
+header{  /*Especificidad:001*/
+    color: #ffffff;
+    background-color: #0000ff;
+    text-transform: uppercase;
+    padding: 0.5em;
+    text-align: center;
+    font-size: 1.5em;
+    border-radius: 1em;
+}
+
+body{  /*Especificidad:001*/
+    background-color: #afeeee;
+}
+
+p{  /*Especificidad:001*/
+    font-size: 2em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h2{  /*Especificidad:001*/
+    margin-top: 2em;
+}
+
+aside {  /*Especificidad:001*/
+    width:100em; 
+    height:50em; 
+    margin-top: 3em;
+    grid-area: mapa;
+}
+
+section{  /*Especificidad:001*/
+    grid-area: tiempo;
+}
+
+h3{  /*Especificidad:001*/
+    color: #d2691e;
+    font-size: 2.3em;
+    font-weight: bold;
+}
+
+li{  /*Especificidad:001*/
+    font-size: 1.2em;
+}
+
+main{  /*Especificidad:001*/
+    display: grid;
+    grid-template-areas: 'mapa tiempo tiempo tiempo';
+}
