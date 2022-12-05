@@ -15,7 +15,7 @@ class Meteo{
             success: function(datos){
             
                 //Presentación de los datos contenidos en JSON
-                var icono = "<img src=http://openweathermap.org/img/wn/" + datos.weather[0].icon + "@2x.png alt=\"icono del Tiempo "+datos.name+"\"/>";
+                var icono = "<img src=https://openweathermap.org/img/wn/" + datos.weather[0].icon + "@2x.png alt=\"icono del Tiempo "+datos.name+"\"/>";
                 var stringDatos = "<ul><li>Ciudad: " + datos.name + "</li>";
                     stringDatos += "<li>País: " + datos.sys.country + "</li>";
                     stringDatos += "<li>Latitud: " + datos.coord.lat + " grados</li>";
@@ -39,7 +39,7 @@ class Meteo{
                     $("img[alt=\"icono del Tiempo "+datos.name+"\"").after(stringDatos);
                 },
             error:function(){
-                $("h3").html("¡Tenemos problemas! No puedo obtener JSON de <a href='http://openweathermap.org'>OpenWeatherMap</a>"); 
+                $("h3").html("¡Tenemos problemas! No puedo obtener JSON de <a href='https://openweathermap.org'>OpenWeatherMap</a>"); 
                 
             }
         });
@@ -66,7 +66,7 @@ class Meteo{
 
     mostrarCiudades(ciudad,id){
         this.ciudad=ciudad;
-        this.url = "http://api.openweathermap.org/data/2.5/weather?q=" + this.ciudad + this.unidades + this.idioma + "&APPID=" + this.apikey;
+        this.url = "https://api.openweathermap.org/data/2.5/weather?q=" + this.ciudad + this.unidades + this.idioma + "&APPID=" + this.apikey;
         this.cargarDatos(id);
     }
 
