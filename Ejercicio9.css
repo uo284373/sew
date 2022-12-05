@@ -1,0 +1,30 @@
+/*****************
+/* Autor: Carlos Diez Fernández UO284373
+/* Descripción: este documento contiene el css para el ejercicio 9
+/***********/
+
+
+body{  /*Especificidad:001*/
+    background-color: skyblue;
+}
+
+header{  /*Especificidad:001*/
+    color: black;
+    background-color: yellow;
+    text-transform: uppercase;
+    padding: 0.5em;
+    text-align: center;
+    font-size: 1.5em;
+    border-radius: 1em;
+}
+
+h2{  /*Especificidad:001*/
+    color: black;
+    font-size: 2.3em;
+    font-weight: bold;
+}
+
+li{  /*Especificidad:001*/
+    font-size: 1.5em;
+}
+
