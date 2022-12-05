@@ -5,12 +5,12 @@
 
 
 body{  /*Especificidad:001*/
-    background-color: skyblue;
+    background-color: #87ceeb;
 }
 
 header{  /*Especificidad:001*/
-    color: black;
-    background-color: yellow;
+    color: #000000;
+    background-color: #ffff00;
     text-transform: uppercase;
     padding: 0.5em;
     text-align: center;
@@ -19,7 +19,7 @@ header{  /*Especificidad:001*/
 }
 
 h2{  /*Especificidad:001*/
-    color: black;
+    color: #000000;
     font-size: 2.3em;
     font-weight: bold;
 }
@@ -27,4 +27,5 @@ h2{  /*Especificidad:001*/
 li{  /*Especificidad:001*/
     font-size: 1.5em;
 }
+
 
