@@ -1,0 +1,203 @@
+<!DOCTYPE HTML>
+
+<html lang="es">
+<head>
+    <!-- Datos que describen el documento -->
+    <meta charset="UTF-8" />
+    <title>Ejercicio7</title>
+
+    <meta name ="author" content ="Carlos Diez Fernández" />
+    <meta name ="description" content ="Este documento contiene un html valido con el que se van a realizar operaciones a través de JQuery" />
+    <meta name ="keywords" content ="node.js,versiones,javaScript" />
+
+    <!--Definición de la ventana gráfica-->
+    <meta name ="viewport" content ="width=device-width, initial scale=1.0" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="Ejercicio7.js"></script>
+    
+    <!-- añadir el elemento link de enlace a la hoja de estilo dentro del <head> del documento html -->
+    <link rel="stylesheet" type="text/css" href="Ejercicio7.css" />
+</head>
+
+<body>
+    <!-- Datos con el contenidos que aparece en el navegador -->
+    <main>
+        <h1>Node.js</h1>
+        <h2>Descripción general</h2>
+        <p>Node.js es un entorno en tiempo de ejecución multiplataforma, de código abierto, para la capa del servidor 
+            (pero no limitándose a ello) basado en el lenguaje de programación JavaScript, asíncrono, con E/S de datos en una arquitectura orientada 
+            a eventos y basado en el motor V8 de Google. Fue creado con el enfoque de ser útil en la creación de programas de red altamente escalables como, 
+            por ejemplo, servidores web.4 Fue creado por Ryan Dahl en 2009 y su evolución está apadrinada por la empresa Joyent, que además tiene contratado a 
+            Dahl en plantilla.</p>
+        <p>Node.js es similar en su propósito a Twisted o Tornado de Python, Perl Object Environment de Perl, libevent o libev de C, EventMachine de Ruby, 
+            vibe.d de D y Java EE de Java. Al contrario que la mayoría del código JavaScript, no se ejecuta en un navegador, sino en el servidor. Node.js 
+            implementa algunas especificaciones de CommonJS. Node.js incluye un entorno REPL para depuración interactiva.</p>
+
+        <h3>Versiones de Node.js</h3>
+        <table>
+            <caption>Versiones Node.js</caption>
+
+            <tbody>
+                <tr>
+                    <th scope="col" id="version">Versión</th>
+                    <th scope="col" id="nombre">Nombre</th>
+                    <th scope="col" id="fechadeliberacion">Fecha de liberación</th>
+                    <th scope="col" id="estadolts">Estado LTS</th>
+                    <th scope="col" id="iniciolts">Inicio LTS</th>
+                    <th scope="col" id="iniciodemantenimiento">Inicio de mantenimiento</th>
+                    <th scope="col" id="findemantenimiento">Fin de mantenimiento</th>
+                </tr>
+                <tr>
+                    <th scope="row" id="v0.10.x" headers="version">v0.10.x</th>
+                    <td headers="v0.10.x nombre">-</td>
+                    <td headers="v0.10.x fechadeliberacion">2013-03-11</td>
+                    <td headers="v0.10.x estadolts">Sin soporte</td>
+                    <td headers="v0.10.x iniciolts">-</td>
+                    <td headers="v0.10.x iniciodemantenimiento">2015-10-01</td>
+                    <td headers="v0.10.x findemantenimiento">2016-10-31</td>
+                </tr>
+                <tr>
+                    <th scope="row" id="v0.12.x" headers="version">v0.12.x</th>
+                    <td headers="v0.12.x nombre">-</td>
+                    <td headers="v0.12.x fechadeliberacion">2015-02-06</td>
+                    <td headers="v0.12.x estadolts">Sin soporte</td>
+                    <td headers="v0.12.x iniciolts">-</td>
+                    <td headers="v0.12.x iniciodemantenimiento">2016-04-01</td>
+                    <td headers="v0.12.x findemantenimiento">2016-12-31</td>
+                </tr>
+                <tr>
+                    <th scope="row" id="4.x" headers="version">4.x</th>
+                    <td headers="4.x nombre">Argon</td>
+                    <td headers="4.x fechadeliberacion">2015-09-08</td>
+                    <td headers="4.x estadolts">Sin soporte</td>
+                    <td headers="4.x iniciolts">2015-10-01</td>
+                    <td headers="4.x iniciodemantenimiento">2017-04-01</td>
+                    <td headers="4.x findemantenimiento">2018-04-30</td>
+                </tr>
+                <tr>
+                    <th scope="row" id="5.x" headers="version">5.x</th>
+                    <td headers="5.x nombre">-</td>
+                    <td headers="5.x fechadeliberacion">2015-10-29</td>
+                    <td headers="5.x estadolts">No LTS</td>
+                    <td headers="5.x iniciolts">N/D</td>
+                    <td headers="5.x iniciodemantenimiento">N/D</td>
+                    <td headers="5.x findemantenimiento">2016-06-30</td>
+                </tr>
+                <tr>
+                    <th scope="row" id="6.x" headers="version">6.x</th>
+                    <td headers="6.x nombre">Boron</td>
+                    <td headers="6.x fechadeliberacion">2016-04-26</td>
+                    <td headers="6.x estadolts">Sin soporte</td>
+                    <td headers="6.x iniciolts">2016-10-18</td>
+                    <td headers="6.x iniciodemantenimiento">2018-04-30</td>
+                    <td headers="6.x findemantenimiento">Abril de 2019</td>
+                </tr>
+                <tr>
+                    <th scope="row" id="7.x" headers="version">7.x</th>
+                    <td headers="7.x nombre">-</td>
+                    <td headers="7.x fechadeliberacion">2016-10-25</td>
+                    <td headers="7.x estadolts">No LTS</td>
+                    <td headers="7.x iniciolts">N/D</td>
+                    <td headers="7.x iniciodemantenimiento">N/D</td>
+                    <td headers="7.x findemantenimiento">2017-06-30</td>
+                </tr>
+                <tr>
+                    <th scope="row" id="8.x" headers="version">8.x</th>
+                    <td headers="8.x nombre">Carbon</td>
+                    <td headers="8.x fechadeliberacion">2017-05-30</td>
+                    <td headers="8.x estadolts">Sin soporte</td>
+                    <td headers="8.x iniciolts">2017-10-31</td>
+                    <td headers="8.x iniciodemantenimiento">2019-01-01</td>
+                    <td headers="8.x findemantenimiento">Diciembre de 2019</td>
+                </tr>
+                <tr>
+                    <th scope="row" id="9.x" headers="version">9.x</th>
+                    <td headers="9.x nombre">-</td>
+                    <td headers="9.x fechadeliberacion">2017-10-01</td>
+                    <td headers="9.x estadolts">No LTS</td>
+                    <td headers="9.x iniciolts">N/D</td>
+                    <td headers="9.x iniciodemantenimiento">N/D</td>
+                    <td headers="9.x findemantenimiento">2018-06-30</td>
+                </tr>
+                <tr>
+                    <th scope="row" id="10.x" headers="version">10.x</th>
+                    <td headers="10.x nombre">Dubnium</td>
+                    <td headers="10.x fechadeliberacion">2018-04-24</td>
+                    <td headers="10.x estadolts">Mantenimiento</td>
+                    <td headers="10.x iniciolts">30 de octubre de 2018</td>
+                    <td headers="10.x iniciodemantenimiento">19 de mayo de 2019</td>
+                    <td headers="10.x findemantenimiento">30 d eabril de 2021</td>
+                </tr>
+                <tr>
+                    <th scope="row" id="11.x" headers="version">11.x</th>
+                    <td headers="11.x nombre">-</td>
+                    <td headers="11.x fechadeliberacion">2018-10-23</td>
+                    <td headers="11.x estadolts">No LTS</td>
+                    <td headers="11.x iniciolts">N/D</td>
+                    <td headers="11.x iniciodemantenimiento">N/D</td>
+                    <td headers="11.x findemantenimiento">1 de junio de 2019</td>
+                </tr>
+                <tr>
+                    <th scope="row" id="12.x" headers="version">12.x</th>
+                    <td headers="12.x nombre">Erbium</td>
+                    <td headers="12.x fechadeliberacion">2019-04-23</td>
+                    <td headers="12.x estadolts">Mantenimiento</td>
+                    <td headers="12.x iniciolts">21 de octubre de 2019</td>
+                    <td headers="12.x iniciodemantenimiento">20 de octubre de 2020</td>
+                    <td headers="12.x findemantenimiento">30 de abril de 2022</td>
+                </tr>
+                <tr>
+                    <th scope="row" id="13.x" headers="version">13.x</th>
+                    <td headers="13.x nombre">-</td>
+                    <td headers="13.x fechadeliberacion">22 de octubre de 2019</td>
+                    <td headers="13.x estadolts">No LTS</td>
+                    <td headers="13.x iniciolts">-</td>
+                    <td headers="13.x iniciodemantenimiento">1 de abril de 2020</td>
+                    <td headers="13.x findemantenimiento">1 de junio de 2020</td>
+                </tr>
+                <tr>
+                    <th scope="row" id="14.x" headers="version">14.x</th>
+                    <td headers="14.x nombre">Fermium</td>
+                    <td headers="14.x fechadeliberacion">21 de abril de 2020</td>
+                    <td headers="14.x estadolts">Activo</td>
+                    <td headers="14.x iniciolts">20 de octubre de 2020</td>
+                    <td headers="14.x iniciodemantenimiento">19 de octubre de 2021</td>
+                    <td headers="14.x findemantenimiento">20 de abril de 2023</td>
+                </tr>
+                <tr>
+                    <th scope="row" id="15.x" headers="version">15.x</th>
+                    <td headers="15.x nombre">-</td>
+                    <td headers="15.x fechadeliberacion">22 de octubre de 2020</td>
+                    <td headers="15.x estadolts">No LTS</td>
+                    <td headers="15.x iniciolts">-</td>
+                    <td headers="15.x iniciodemantenimiento">1 de abril de 2021</td>
+                    <td headers="15.x findemantenimiento">1 de junio de 2021</td>
+                </tr>
+                <tr>
+                    <th scope="row" id="16.x" headers="version">16.x</th>
+                    <td headers="16.x nombre">-</td>
+                    <td headers="16.x fechadeliberacion">21 de abril de 2021</td>
+                    <td headers="16.x estadolts">Prevista</td>
+                    <td headers="16.x iniciolts">26 de octubre de 2021</td>
+                    <td headers="16.x iniciodemantenimiento">18 de octubre de 2022</td>
+                    <td headers="16.x findemantenimiento">30 de abril de 2024</td>
+                </tr>
+            </tbody>
+            
+        </table>
+
+        <input type="button" value="Ocultar parrafos" onclick="cambios.ocultar()">
+        <input type="button" value="Mostrar parrafos" onclick="cambios.mostrar()">
+        <input type="button" value="Modificar parrafos" onclick="cambios.modificar()">
+        <input type="button" value="Insertar elemento" onclick="cambios.insertar()">
+        <input type="button" value="Eliminar h2" onclick="cambios.eliminar()">
+        <input type="button" value="Recorrer elementos" onclick="cambios.recorrer()">
+        <input type="button" value="Contar número de filas más número de columnas" onclick="cambios.sumarFilasYColumnas()">
+    </main>
+
+    
+    
+
+    
+</body>
+</html>
