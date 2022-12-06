@@ -1,0 +1,36 @@
+/*****************
+/* Autor: Carlos Diez Fernández UO284373
+/* Descripción: este documento contiene el css para el ejercicio 14
+/***********/
+
+header{  /*Especificidad 001*/
+    color: #ffffff;
+    background-color: #0000ff;
+    text-transform: uppercase;
+    padding: 0.5em;
+    text-align: center;
+    font-size: 1.5em;
+    border-radius: 1em;
+    margin-bottom: 3em;
+}
+
+p,input,label{  /*Especificidad 001*/
+    font-size: 1.5em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{  /*Especificidad 001*/
+    background-color: #afeeee;
+}
+
+h2{ /*Especificidad 001*/
+    color: #0000ff;
+    font-size: 2.3em;
+    margin-top: 2em;
+}
+
+canvas{  /*Especificidad 001*/
+    width:75%; 
+    height:100%; 
+}
+
