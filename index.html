@@ -1,0 +1,463 @@
+<!DOCTYPE HTML>
+
+<html lang="es"><head>
+    <!-- Datos que describen el documento -->
+    <meta charset="UTF-8">
+    <title>Ejercicio 12</title>
+
+    <meta name="author" content="Carlos Diez Fernández">
+    <meta name="description" content="Este documento permite seleccionar varios archivos del ordenador del usuario y muestra informacion sobre ellos">
+    <meta name="keywords" content="archivos,informacion,xml,json">
+
+    <!--Definición de la ventana gráfica-->
+    <meta name="viewport" content="width=device-width, initial scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="Ejercicio12.js"></script>
+    
+    <!-- añadir el elemento link de enlace a la hoja de estilo dentro del <head> del documento html -->
+    <link rel="stylesheet" type="text/css" href="Ejercicio12.css">
+</head>
+
+<body>
+    <!-- Datos con el contenidos que aparece en el navegador -->
+    <header>
+        <h1>API File</h1>
+    </header>
+    <label for="file">Seleccione un archivo:</label>
+    <input id="file" type="file" name="Archivos" onchange="file.calcularTamañoArchivo()" multiple=""><p title="numero">Ha seleccionado 3 archivos</p><p title="tamaño">El tamaño total de los archivos subidos es 13689 bytes</p><p>Nombre del archivo: Ejemplo.json</p><p>Tamaño del archivo: 690 bytes</p><p>Tipo de archivo: application/json</p><p title="archivo0">Fecha última modificación: Wed Nov 30 2022 11:47:44 GMT+0100 (hora estándar de Europa central)</p><pre title="0"><code title="0">{
+  "coord": {
+    "lon": -5.8448,
+    "lat": 43.3603
+  },
+  "weather": [
+    {
+      "id": 804,
+      "main": "Clouds",
+      "description": "nubes",
+      "icon": "04d"
+    }
+  ],
+  "base": "stations",
+  "main": {
+    "temp": 11.86,
+    "feels_like": 11.71,
+    "temp_min": 8.4,
+    "temp_max": 12.07,
+    "pressure": 1013,
+    "humidity": 100
+  },
+  "visibility": 10000,
+  "wind": {
+    "speed": 0.45,
+    "deg": 182,
+    "gust": 1.34
+  },
+  "clouds": {
+    "all": 92
+  },
+  "dt": 1669805109,
+  "sys": {
+    "type": 2,
+    "id": 2032169,
+    "country": "ES",
+    "sunrise": 1669793694,
+    "sunset": 1669826969
+  },
+  "timezone": 3600,
+  "id": 3114711,
+  "name": "Oviedo",
+  "cod": 200
+}</code></pre><p>Nombre del archivo: Ejemplo.txt</p><p>Tamaño del archivo: 635 bytes</p><p>Tipo de archivo: text/plain</p><p title="archivo1">Fecha última modificación: Thu Nov 24 2022 10:20:51 GMT+0100 (hora estándar de Europa central)</p><pre title="1"><code title="1">public static void main(String[] args) throws FileNotFoundException, DocumentException {
+		generarFactura(null);
+	    }
+	
+	public static void generarFactura(Venta venta) throws FileNotFoundException, DocumentException {
+		Document doc = new Document();
+		String directorio = new File("Facturas/").getAbsolutePath();
+		PdfWriter pdf = PdfWriter.getInstance(doc, new FileOutputStream(directorio+"Factura_"+".pdf"));
+		
+		//Cliente cliente = Cliente.getCliente(venta.getIdCliente());
+		
+		doc.open();
+		
+		añadirLogo(doc);
+	}
+
+	private static void añadirLogo(Document doc) {
+		// TODO Auto-generated method stub
+		
+	}</code></pre><p>Nombre del archivo: Ejemplo.xml</p><p>Tamaño del archivo: 12364 bytes</p><p>Tipo de archivo: text/xml</p><p title="archivo2">Fecha última modificación: Tue Nov 08 2022 19:02:49 GMT+0100 (hora estándar de Europa central)</p><pre title="2"><code title="2">&lt;?xml version="1.0" encoding="UTF-8" standalone="no"?&gt;
+&lt;!DOCTYPE person SYSTEM "person.dtd"&gt;
+&lt;person name="María"&gt;
+	&lt;datos&gt;
+		&lt;surname&gt;Fernández Fernández&lt;/surname&gt;
+		&lt;birthDate&gt;2001-10-27&lt;/birthDate&gt;
+		&lt;birthPlace&gt;Oviedo&lt;/birthPlace&gt;
+		&lt;coordinatesBirthPlace&gt;
+			&lt;latitude&gt;-5.854596&lt;/latitude&gt;
+			&lt;length&gt;43.351906&lt;/length&gt;
+			&lt;altitude&gt;20&lt;/altitude&gt;
+		&lt;/coordinatesBirthPlace&gt;
+		&lt;residencePlace&gt;Oviedo&lt;/residencePlace&gt;
+		&lt;coordinateResidencePlace&gt;
+			&lt;latitudeR&gt;-5.858276&lt;/latitudeR&gt;
+			&lt;lengthR&gt;43.353123&lt;/lengthR&gt;
+			&lt;altitudeR&gt;20&lt;/altitudeR&gt;
+		&lt;/coordinateResidencePlace&gt;
+		&lt;pictures&gt;
+			&lt;picture archivo="https://cdn.pixabay.com/photo/2016/11/29/13/14/attractive-1869761_960_720.jpg"&gt;Foto María&lt;/picture&gt;
+		&lt;/pictures&gt;
+		&lt;videos&gt;
+			&lt;video link="https://www.youtube.com/watch?v=VRchrCuDLVo"&gt;Video María&lt;/video&gt;
+		&lt;/videos&gt;
+		&lt;comments&gt;
+			&lt;comment&gt;Quiere estudiar biología&lt;/comment&gt;
+			&lt;comment&gt;Sus deportes preferidos son natación y baloncesto&lt;/comment&gt;
+		&lt;/comments&gt;
+	&lt;/datos&gt;
+	
+	&lt;person name="Laura"&gt;
+		&lt;datos&gt;
+			&lt;surname&gt;Fernández García&lt;/surname&gt;
+			&lt;birthDate&gt;2005-10-14&lt;/birthDate&gt;
+			&lt;birthPlace&gt;Leon&lt;/birthPlace&gt;
+			&lt;coordinatesBirthPlace&gt;
+				&lt;latitude&gt;-5.568425&lt;/latitude&gt;
+				&lt;length&gt;42.603223&lt;/length&gt;
+				&lt;altitude&gt;20&lt;/altitude&gt;
+			&lt;/coordinatesBirthPlace&gt;
+			&lt;residencePlace&gt;Oviedo&lt;/residencePlace&gt;
+			&lt;coordinateResidencePlace&gt;
+				&lt;latitudeR&gt;-5.8562697&lt;/latitudeR&gt;
+				&lt;lengthR&gt;43.3554438&lt;/lengthR&gt;
+				&lt;altitudeR&gt;20&lt;/altitudeR&gt;
+			&lt;/coordinateResidencePlace&gt;
+			&lt;pictures&gt;
+				&lt;picture archivo="https://cdn.pixabay.com/photo/2017/02/16/23/10/smile-2072907_960_720.jpg"&gt;Foto Laura&lt;/picture&gt;
+			&lt;/pictures&gt;
+			&lt;videos&gt;
+				
+			&lt;/videos&gt;
+			&lt;comments&gt;
+				&lt;comment&gt;Quiere estudiar biología&lt;/comment&gt;
+				&lt;comment&gt;Sus deportes preferidos son natación y baloncesto&lt;/comment&gt;
+			&lt;/comments&gt;
+		&lt;/datos&gt;
+		&lt;person name="Paula"&gt;
+			&lt;datos&gt;
+				&lt;surname&gt;Díaz García&lt;/surname&gt;
+				&lt;birthDate&gt;2007-05-17&lt;/birthDate&gt;
+				&lt;birthPlace&gt;París&lt;/birthPlace&gt;
+				&lt;coordinatesBirthPlace&gt;
+					&lt;latitude&gt;2.338349&lt;/latitude&gt;
+					&lt;length&gt;48.842605&lt;/length&gt;
+					&lt;altitude&gt;20&lt;/altitude&gt;
+				&lt;/coordinatesBirthPlace&gt;
+				&lt;residencePlace&gt;Madrid&lt;/residencePlace&gt;
+				&lt;coordinateResidencePlace&gt;
+					&lt;latitudeR&gt;-3.715177&lt;/latitudeR&gt;
+					&lt;lengthR&gt;40.425756&lt;/lengthR&gt;
+					&lt;altitudeR&gt;20&lt;/altitudeR&gt;
+				&lt;/coordinateResidencePlace&gt;
+				&lt;pictures&gt;
+					&lt;picture archivo="https://cdn.pixabay.com/photo/2015/11/26/00/14/woman-1063100_960_720.jpg"&gt;Foto Paula&lt;/picture&gt;
+				&lt;/pictures&gt;
+				&lt;videos&gt;
+					&lt;video link="https://www.youtube.com/watch?v=fXBXOaLcMZg"&gt;Video Paula&lt;/video&gt;
+				&lt;/videos&gt;
+				&lt;comments&gt;
+					&lt;comment&gt;Quiere estudiar enfermería&lt;/comment&gt;
+					&lt;comment&gt;Sus deportes preferidos son natación y baloncesto&lt;/comment&gt;
+				&lt;/comments&gt;
+			&lt;/datos&gt;
+		&lt;/person&gt;
+		&lt;person name="Pablo"&gt;
+			&lt;datos&gt;
+				&lt;surname&gt;Gabarre García&lt;/surname&gt;
+				&lt;birthDate&gt;2001-12-15&lt;/birthDate&gt;
+				&lt;birthPlace&gt;Sevilla&lt;/birthPlace&gt;
+				&lt;coordinatesBirthPlace&gt;
+					&lt;latitude&gt;-5.986188&lt;/latitude&gt;
+					&lt;length&gt;37.385540&lt;/length&gt;
+					&lt;altitude&gt;20&lt;/altitude&gt;
+				&lt;/coordinatesBirthPlace&gt;
+				&lt;residencePlace&gt;Málaga&lt;/residencePlace&gt;
+				&lt;coordinateResidencePlace&gt;
+					&lt;latitudeR&gt;-4.421618&lt;/latitudeR&gt;
+					&lt;lengthR&gt;36.726474&lt;/lengthR&gt;
+					&lt;altitudeR&gt;20&lt;/altitudeR&gt;
+				&lt;/coordinateResidencePlace&gt;
+				&lt;pictures&gt;
+					&lt;picture archivo="https://cdn.pixabay.com/photo/2016/11/21/12/42/beard-1845166_960_720.jpg"&gt;Foto Pablo&lt;/picture&gt;
+				&lt;/pictures&gt;
+				&lt;videos&gt;
+					
+				&lt;/videos&gt;
+				&lt;comments&gt;
+					&lt;comment&gt;Quiere estudiar ingeniería industrial&lt;/comment&gt;
+					&lt;comment&gt;Sus deportes preferidos son natación y baloncesto&lt;/comment&gt;
+				&lt;/comments&gt;
+			&lt;/datos&gt;
+		&lt;/person&gt;
+		&lt;person name="Jaime"&gt;
+			&lt;datos&gt;
+				&lt;surname&gt;Varela García&lt;/surname&gt;
+				&lt;birthDate&gt;1997-05-12&lt;/birthDate&gt;
+				&lt;birthPlace&gt;Barcelona&lt;/birthPlace&gt;
+				&lt;coordinatesBirthPlace&gt;
+					&lt;latitude&gt;2.128340&lt;/latitude&gt;
+					&lt;length&gt;41.386035&lt;/length&gt;
+					&lt;altitude&gt;20&lt;/altitude&gt;
+				&lt;/coordinatesBirthPlace&gt;
+				&lt;residencePlace&gt;Murcia&lt;/residencePlace&gt;
+				&lt;coordinateResidencePlace&gt;
+					&lt;latitudeR&gt;-1.140392&lt;/latitudeR&gt;
+					&lt;lengthR&gt;37.990595&lt;/lengthR&gt;
+					&lt;altitudeR&gt;20&lt;/altitudeR&gt;
+				&lt;/coordinateResidencePlace&gt;
+				&lt;pictures&gt;
+					&lt;picture archivo="https://cdn.pixabay.com/photo/2015/01/08/18/29/entrepreneur-593358_960_720.jpg"&gt;Foto Jaime&lt;/picture&gt;
+				&lt;/pictures&gt;
+				&lt;videos&gt;
+					&lt;video link="https://www.youtube.com/watch?v=-KnoYF1wNG0"&gt;Video Jaime&lt;/video&gt;
+				&lt;/videos&gt;
+				&lt;comments&gt;
+					&lt;comment&gt;Quiere estudiar mecánica&lt;/comment&gt;
+					&lt;comment&gt;Sus deportes preferidos son natación y baloncesto&lt;/comment&gt;
+				&lt;/comments&gt;
+			&lt;/datos&gt;
+		&lt;/person&gt;
+	&lt;/person&gt;
+	
+	&lt;person name="Alberto"&gt;
+		&lt;datos&gt;
+			&lt;surname&gt;Álvarez Fernández&lt;/surname&gt;
+			&lt;birthDate&gt;1995-10-04&lt;/birthDate&gt;
+			&lt;birthPlace&gt;Tarragona&lt;/birthPlace&gt;
+			&lt;coordinatesBirthPlace&gt;
+				&lt;latitude&gt;1.241285&lt;/latitude&gt;
+				&lt;length&gt;41.119015&lt;/length&gt;
+				&lt;altitude&gt;10&lt;/altitude&gt;
+			&lt;/coordinatesBirthPlace&gt;
+			&lt;residencePlace&gt;Valencia&lt;/residencePlace&gt;
+			&lt;coordinateResidencePlace&gt;
+				&lt;latitudeR&gt;-0.385041&lt;/latitudeR&gt;
+				&lt;lengthR&gt;39.468211&lt;/lengthR&gt;
+				&lt;altitudeR&gt;10&lt;/altitudeR&gt;
+			&lt;/coordinateResidencePlace&gt;
+			&lt;pictures&gt;
+				&lt;picture archivo="https://cdn.pixabay.com/photo/2017/04/01/21/06/portrait-2194457_960_720.jpg"&gt;Foto de Alberto&lt;/picture&gt;
+			&lt;/pictures&gt;
+			&lt;videos&gt;
+				
+			&lt;/videos&gt;
+			&lt;comments&gt;
+				&lt;comment&gt;Quiere estudiar medicina&lt;/comment&gt;
+				&lt;comment&gt;Sus deportes preferidos son fútbol y ciclismo&lt;/comment&gt;
+			&lt;/comments&gt;
+		&lt;/datos&gt;
+		&lt;person name="Claudia"&gt;
+			&lt;datos&gt;
+				&lt;surname&gt;González García&lt;/surname&gt;
+				&lt;birthDate&gt;2004-06-09&lt;/birthDate&gt;
+				&lt;birthPlace&gt;Badajoz&lt;/birthPlace&gt;
+				&lt;coordinatesBirthPlace&gt;
+					&lt;latitude&gt;-6.970087&lt;/latitude&gt;
+					&lt;length&gt;38.881072&lt;/length&gt;
+					&lt;altitude&gt;20&lt;/altitude&gt;
+				&lt;/coordinatesBirthPlace&gt;
+				&lt;residencePlace&gt;Teruel&lt;/residencePlace&gt;
+				&lt;coordinateResidencePlace&gt;
+					&lt;latitudeR&gt;-1.107685&lt;/latitudeR&gt;
+					&lt;lengthR&gt;40.345333&lt;/lengthR&gt;
+					&lt;altitudeR&gt;20&lt;/altitudeR&gt;
+				&lt;/coordinateResidencePlace&gt;
+				&lt;pictures&gt;
+					&lt;picture archivo="https://cdn.pixabay.com/photo/2018/01/02/09/47/woman-3055841_960_720.jpg"&gt;Foto de Claudia&lt;/picture&gt;
+				&lt;/pictures&gt;
+				&lt;videos&gt;
+					&lt;video link="https://www.youtube.com/watch?v=AeIlL0sCFnY"&gt;Video Claudia&lt;/video&gt;
+				&lt;/videos&gt;
+				&lt;comments&gt;
+					&lt;comment&gt;Quiere estudiar jardinería&lt;/comment&gt;
+					&lt;comment&gt;Sus deportes preferidos son natación y baloncesto&lt;/comment&gt;
+				&lt;/comments&gt;
+			&lt;/datos&gt;
+		&lt;/person&gt;
+		&lt;person name="Enol"&gt;
+			&lt;datos&gt;
+				&lt;surname&gt;López García&lt;/surname&gt;
+				&lt;birthDate&gt;2002-03-12&lt;/birthDate&gt;
+				&lt;birthPlace&gt;Santander&lt;/birthPlace&gt;
+				&lt;coordinatesBirthPlace&gt;
+					&lt;latitude&gt;-3.821307&lt;/latitude&gt;
+					&lt;length&gt;43.457348&lt;/length&gt;
+					&lt;altitude&gt;20&lt;/altitude&gt;
+				&lt;/coordinatesBirthPlace&gt;
+				&lt;residencePlace&gt;Almería&lt;/residencePlace&gt;
+				&lt;coordinateResidencePlace&gt;
+					&lt;latitudeR&gt;-2.463801&lt;/latitudeR&gt;
+					&lt;lengthR&gt;36.836623&lt;/lengthR&gt;
+					&lt;altitudeR&gt;20&lt;/altitudeR&gt;
+				&lt;/coordinateResidencePlace&gt;
+				&lt;pictures&gt;
+					&lt;picture archivo="https://cdn.pixabay.com/photo/2015/01/12/10/45/man-597178_960_720.jpg"&gt;Foto de Enol&lt;/picture&gt;
+				&lt;/pictures&gt;
+				&lt;videos&gt;
+					
+				&lt;/videos&gt;
+				&lt;comments&gt;
+					&lt;comment&gt;Quiere estudiar magisterio&lt;/comment&gt;
+					&lt;comment&gt;Sus deportes preferidos son natación y baloncesto&lt;/comment&gt;
+				&lt;/comments&gt;
+			&lt;/datos&gt;
+		&lt;/person&gt;
+		&lt;person name="Ramón"&gt;
+			&lt;datos&gt;
+				&lt;surname&gt;Hernández García&lt;/surname&gt;
+				&lt;birthDate&gt;2007-04-03&lt;/birthDate&gt;
+				&lt;birthPlace&gt;Bilbao&lt;/birthPlace&gt;
+				&lt;coordinatesBirthPlace&gt;
+					&lt;latitude&gt;-2.933660&lt;/latitude&gt;
+					&lt;length&gt;43.260701&lt;/length&gt;
+					&lt;altitude&gt;20&lt;/altitude&gt;
+				&lt;/coordinatesBirthPlace&gt;
+				&lt;residencePlace&gt;Palencia&lt;/residencePlace&gt;
+				&lt;coordinateResidencePlace&gt;
+					&lt;latitudeR&gt;-4.531362&lt;/latitudeR&gt;
+					&lt;lengthR&gt;42.009208&lt;/lengthR&gt;
+					&lt;altitudeR&gt;20&lt;/altitudeR&gt;
+				&lt;/coordinateResidencePlace&gt;
+				&lt;pictures&gt;
+					&lt;picture archivo="https://cdn.pixabay.com/photo/2015/07/20/12/57/ambassador-852766_960_720.jpg"&gt;Foto de Ramón&lt;/picture&gt;
+				&lt;/pictures&gt;
+				&lt;videos&gt;
+					&lt;video link="https://www.youtube.com/watch?v=q5roBox09TA"&gt;Video Ramon&lt;/video&gt;
+				&lt;/videos&gt;
+				&lt;comments&gt;
+					&lt;comment&gt;Quiere estudiar psicología&lt;/comment&gt;
+					&lt;comment&gt;Sus deportes preferidos son natación y baloncesto&lt;/comment&gt;
+				&lt;/comments&gt;
+			&lt;/datos&gt;
+		&lt;/person&gt;
+	&lt;/person&gt;
+	
+	&lt;person name="Juan"&gt;
+		&lt;datos&gt;
+			&lt;surname&gt;García Martínez&lt;/surname&gt;
+			&lt;birthDate&gt;2002-09-04&lt;/birthDate&gt;
+			&lt;birthPlace&gt;Ponferrada&lt;/birthPlace&gt;
+			&lt;coordinatesBirthPlace&gt;
+				&lt;latitude&gt;-6.600953&lt;/latitude&gt;
+				&lt;length&gt;42.552066&lt;/length&gt;
+				&lt;altitude&gt;15&lt;/altitude&gt;
+			&lt;/coordinatesBirthPlace&gt;
+			&lt;residencePlace&gt;Lugo&lt;/residencePlace&gt;
+			&lt;coordinateResidencePlace&gt;
+				&lt;latitudeR&gt;-7.561213&lt;/latitudeR&gt;
+				&lt;lengthR&gt;43.010310&lt;/lengthR&gt;
+				&lt;altitudeR&gt;20&lt;/altitudeR&gt;
+			&lt;/coordinateResidencePlace&gt;
+			&lt;pictures&gt;
+				&lt;picture archivo="https://cdn.pixabay.com/photo/2015/01/08/18/30/entrepreneur-593371_960_720.jpg"&gt;Foto de Juan&lt;/picture&gt;
+			&lt;/pictures&gt;
+			&lt;videos&gt;
+				
+			&lt;/videos&gt;
+			&lt;comments&gt;
+				&lt;comment&gt;Quiere estudiar ingeniería aeroespacial&lt;/comment&gt;
+				&lt;comment&gt;Sus deportes preferidos son tenis y balonmano&lt;/comment&gt;
+			&lt;/comments&gt;
+		&lt;/datos&gt;
+		&lt;person name="Mateo"&gt;
+			&lt;datos&gt;
+				&lt;surname&gt;Valle García&lt;/surname&gt;
+				&lt;birthDate&gt;2000-01-14&lt;/birthDate&gt;
+				&lt;birthPlace&gt;A Coruña&lt;/birthPlace&gt;
+				&lt;coordinatesBirthPlace&gt;
+					&lt;latitude&gt;-8.408892&lt;/latitude&gt;
+					&lt;length&gt;43.359798&lt;/length&gt;
+					&lt;altitude&gt;20&lt;/altitude&gt;
+				&lt;/coordinatesBirthPlace&gt;
+				&lt;residencePlace&gt;Ourense&lt;/residencePlace&gt;
+				&lt;coordinateResidencePlace&gt;
+					&lt;latitudeR&gt;-7.871055&lt;/latitudeR&gt;
+					&lt;lengthR&gt;42.336582&lt;/lengthR&gt;
+					&lt;altitudeR&gt;20&lt;/altitudeR&gt;
+				&lt;/coordinateResidencePlace&gt;
+				&lt;pictures&gt;
+					&lt;picture archivo="https://cdn.pixabay.com/photo/2016/11/18/19/07/happy-1836445_960_720.jpg"&gt;Foto de Mateo&lt;/picture&gt;
+				&lt;/pictures&gt;
+				&lt;videos&gt;
+					&lt;video link="https://www.youtube.com/watch?v=r09zrSXIfJQ"&gt;Video Mateo&lt;/video&gt;
+				&lt;/videos&gt;
+				&lt;comments&gt;
+					&lt;comment&gt;Quiere estudiar informática&lt;/comment&gt;
+					&lt;comment&gt;Sus deportes preferidos son natación y baloncesto&lt;/comment&gt;
+				&lt;/comments&gt;
+			&lt;/datos&gt;
+		&lt;/person&gt;
+		&lt;person name="Lucas"&gt;
+			&lt;datos&gt;
+				&lt;surname&gt;Moro García&lt;/surname&gt;
+				&lt;birthDate&gt;2007-10-22&lt;/birthDate&gt;
+				&lt;birthPlace&gt;Burgos&lt;/birthPlace&gt;
+				&lt;coordinatesBirthPlace&gt;
+					&lt;latitude&gt;-3.682963&lt;/latitude&gt;
+					&lt;length&gt;42.348859&lt;/length&gt;
+					&lt;altitude&gt;20&lt;/altitude&gt;
+				&lt;/coordinatesBirthPlace&gt;
+				&lt;residencePlace&gt;Zaragoza&lt;/residencePlace&gt;
+				&lt;coordinateResidencePlace&gt;
+					&lt;latitudeR&gt;-0.893520&lt;/latitudeR&gt;
+					&lt;lengthR&gt;41.652403&lt;/lengthR&gt;
+					&lt;altitudeR&gt;20&lt;/altitudeR&gt;
+				&lt;/coordinateResidencePlace&gt;
+				&lt;pictures&gt;
+					&lt;picture archivo="https://cdn.pixabay.com/photo/2018/02/16/14/38/portrait-3157821_960_720.jpg"&gt;Foto de Lucas&lt;/picture&gt;
+				&lt;/pictures&gt;
+				&lt;videos&gt;
+					
+				&lt;/videos&gt;
+				&lt;comments&gt;
+					&lt;comment&gt;Quiere estudiar ingeniería eléctrica&lt;/comment&gt;
+					&lt;comment&gt;Sus deportes preferidos son natación y baloncesto&lt;/comment&gt;
+				&lt;/comments&gt;
+			&lt;/datos&gt;
+		&lt;/person&gt;
+		&lt;person name="Daniel"&gt;
+			&lt;datos&gt;
+				&lt;surname&gt;Gabarre García&lt;/surname&gt;
+				&lt;birthDate&gt;2009-02-24&lt;/birthDate&gt;
+				&lt;birthPlace&gt;Huesca&lt;/birthPlace&gt;
+				&lt;coordinatesBirthPlace&gt;
+					&lt;latitude&gt;-0.409620&lt;/latitude&gt;
+					&lt;length&gt;42.135640&lt;/length&gt;
+					&lt;altitude&gt;20&lt;/altitude&gt;
+				&lt;/coordinatesBirthPlace&gt;
+				&lt;residencePlace&gt;Gerona&lt;/residencePlace&gt;
+				&lt;coordinateResidencePlace&gt;
+					&lt;latitudeR&gt;2.820334&lt;/latitudeR&gt;
+					&lt;lengthR&gt;41.97833941&lt;/lengthR&gt;
+					&lt;altitudeR&gt;20&lt;/altitudeR&gt;
+				&lt;/coordinateResidencePlace&gt;
+				&lt;pictures&gt;
+					&lt;picture archivo="https://cdn.pixabay.com/photo/2017/09/25/13/12/man-2785071_960_720.jpg"&gt;Foto de Daniel&lt;/picture&gt;
+				&lt;/pictures&gt;
+				&lt;videos&gt;
+					&lt;video link="https://www.youtube.com/watch?v=n_ceoSJFiQQ"&gt;Video Daniel&lt;/video&gt;
+				&lt;/videos&gt;
+				&lt;comments&gt;
+					&lt;comment&gt;Quiere estudiar derecho&lt;/comment&gt;
+					&lt;comment&gt;Sus deportes preferidos son natación y baloncesto&lt;/comment&gt;
+				&lt;/comments&gt;
+			&lt;/datos&gt;
+		&lt;/person&gt;
+	&lt;/person&gt;
+	
+&lt;/person&gt;</code></pre>
+
+   
+    
+
+</body></html>
