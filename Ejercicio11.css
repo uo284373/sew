@@ -1,0 +1,29 @@
+/*****************
+/* Autor: Carlos Diez Fernández UO284373
+/* Descripción: este documento contiene el css para la tarea 5 del ejercicio 11
+/***********/
+
+
+header{  /*Especificidad:001*/
+    color: #ffffff;
+    background-color: #0000ff;
+    text-transform: uppercase;
+    padding: 0.5em;
+    text-align: center;
+    font-size: 2em;
+    border-radius: 1em;
+}
+
+body{  /*Especificidad:001*/
+    background-color: #afeeee;
+}
+
+p{  /*Especificidad:001*/
+    font-size: 2em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+aside {  /*Especificidad:001*/
+    width:100%; 
+    height:50vw; 
+}
