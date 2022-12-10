@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+
+<html lang="es">
+<head>
+    <!-- Datos que describen el documento -->
+    <meta charset="UTF-8" />
+    <title>Calculadora RPN</title>
+
+    <meta name ="author" content ="Carlos Diez Fernández" />
+    <meta name ="description" content ="este documento contiene los botones de la calculadora RPN" />
+    <meta name ="keywords" content ="calculadora,rpn,botones" />
+
+    <!--Definición de la ventana gráfica-->
+    <meta name ="viewport" content ="width=device-width, initial scale=1.0" />
+    <script src="CalculadoraRPN.js"></script>
+    
+    <!-- añadir el elemento link de enlace a la hoja de estilo dentro del <head> del documento html -->
+    <link rel="stylesheet" type="text/css" href="CalculadoraRPN.css" />
+</head>
+
+<body>
+    <!-- Datos con el contenidos que aparece en el navegador -->
+    
+    <form>
+        <label for="texto">Calculadora RPN</label>
+        <textarea id="texto" cols="70" rows="60" readonly></textarea>
+        <input type="button" value="CE" onclick="calculadora.ON()">
+        <input type="button" value="+" onclick="calculadora.suma()">
+        <input type="button" value="-" onclick="calculadora.resta()">
+        <input type="button" value="X" onclick="calculadora.multiplicacion()">
+        <input type="button" value="/" onclick="calculadora.division()">
+        <input type="button" value="7" onclick="calculadora.digitos(this.value)">
+        <input type="button" value="8" onclick="calculadora.digitos(this.value)">
+        <input type="button" value="9" onclick="calculadora.digitos(this.value)">
+        <input type="button" value="sin" onclick="calculadora.sin()">
+        <input type="button" value="asin" onclick="calculadora.asin()">
+        <input type="button" value="4" onclick="calculadora.digitos(this.value)">
+        <input type="button" value="5" onclick="calculadora.digitos(this.value)">
+        <input type="button" value="6" onclick="calculadora.digitos(this.value)">
+        <input type="button" value="cos" onclick="calculadora.cos()">
+        <input type="button" value="acos" onclick="calculadora.acos()">
+        <input type="button" value="1" onclick="calculadora.digitos(this.value)">
+        <input type="button" value="2" onclick="calculadora.digitos(this.value)">
+        <input type="button" value="3" onclick="calculadora.digitos(this.value)">
+        <input type="button" value="tan" onclick="calculadora.tan()">
+        <input type="button" value="atan" onclick="calculadora.atan()">
+        <input type="button" value="0" onclick="calculadora.digitos(this.value)">
+        <input type="button" value="." onclick="calculadora.punto()">
+        <input type="button" value="Enter" onclick="calculadora.enter()">
+    </form>
+
+    <p>Funcionamiento de la calculadora RPN:</p>
+    <p>El funcionamiento de la calculadora se basa en un pila en la que vas introduciendo los numeros al pulsar sobre el boton "Enter"</p>
+    <p>De forma que si lo que quieres es hacer 5+2 harías lo siguiente:</p>
+    <p>Pulsarias sobre "5" y le darias a "Enter"</p>
+    <p>Pulsarías sobre "2" y le darías a "Enter"</p>
+    <p>Por último pulsarias en "+" y te saldría en pantalla el resultado</p>
+    <p>Si se quiere realizar una operación más compleja en la que ya haya 3 operandos, se debe resolver la operacion de 2 en 2</p>
+    <p>Por ejemplo si queremos realizar la operación: 5+2-4</p>
+    <p>Pulsarias sobre "5" y le darias a "Enter"</p>
+    <p>Pulsarías sobre "2" y le darías a "Enter"</p>
+    <p>Pulsarias en "+" y te saldría en pantalla el resultado</p>
+    <p>Una vez que tenemos este resultado solo faltaria restarle 4 que lo hariamos como la anterior operacion:</p>
+    <p>Pulsarias sobre "4" y le darias a "Enter"</p>
+    <p>Por último, pulsarias sobre "-" y ya te saldría en pantalla el resultado final</p>
+    <p>Si se quiere realizar una operacion con paréntesis se debe operar primero la parte de los parentesis y por ultimo realizar la operacion que los junta</p>
+    <p>Por ejemplo si se quiere realizar (7-2)*(2+2) se debe realizar lo siguiente</p>
+    <p>Pulsarias sobre "7" y le darias a "Enter"</p>
+    <p>Pulsarías sobre "2" y le darías a "Enter"</p>
+    <p>Pulsarias en "-" y te saldría en pantalla el resultado de la resta</p>
+    <p>Pulsarias sobre "2" y le darias a "Enter"</p>
+    <p>Pulsarías sobre "2" y le darías a "Enter"</p>
+    <p>Pulsarias en "+" y te saldría en pantalla el resultado de la suma</p>
+    <p>Y, por último, pulsarías sobre "*" y te saldría en pantalla el resultado final</p>
+    
+    
+</body>
+</html>
