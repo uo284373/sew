@@ -4,7 +4,6 @@
 /***********/
 
 body { /*Especificidad 001*/
-    margin-right: 80em;
     margin-left: 4em;
     margin-top: 5em;
 }
